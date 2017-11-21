@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  Relic-Recovery-iOS-Scoring
+//  Tap Me
 //
-//  Created by Neal Soni on 11/20/17.
+//  Created by Mike Jaoudi on 10/17/12.
 //
 //
 
@@ -17,19 +17,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
     seconds=[[NSUserDefaults standardUserDefaults] integerForKey:@"seconds"];
     [self resetTime];
     timer = nil;
-
+    
     
     self.navigationController.navigationBar.barStyle=UIBarStyleBlack;
     UIFont *font = [UIFont boldSystemFontOfSize:22];
     NSDictionary *attributes = @{NSFontAttributeName: font};
     [timerLabel setTitleTextAttributes:attributes forState:UIControlStateNormal];
     [self.tableView setBackgroundColor:[UIColor blackColor]];
-
-
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,22 +58,22 @@
                     
                     [timer invalidate];
                     timer = nil;
-
-
+                    
+                    
                     break;
                 case 1:
-[[NSUserDefaults standardUserDefaults] setInteger:30 forKey:@"seconds"];
+                    [[NSUserDefaults standardUserDefaults] setInteger:30 forKey:@"seconds"];
                     [timer invalidate];
                     timer = nil;
-
-break;
+                    
+                    break;
                 case 2:
-[[NSUserDefaults standardUserDefaults] setInteger:150 forKey:@"seconds"];
+                    [[NSUserDefaults standardUserDefaults] setInteger:150 forKey:@"seconds"];
                     [timer invalidate];
                     timer = nil;
-
-break;
-                
+                    
+                    break;
+                    
                 default:
                     break;
             }
@@ -85,7 +85,7 @@ break;
     seconds=[[NSUserDefaults standardUserDefaults] integerForKey:@"seconds"];
     [self resetTime];
     timer = nil;
-
+    
 }
 
 //Implementing our method
@@ -108,11 +108,11 @@ break;
         self.navigationController.toolbar.tintColor = nil;
         [timer invalidate];
         timer = nil;
-
-    }
         
     }
     
+}
+
 
 
 
@@ -122,13 +122,13 @@ break;
     gameMode.image=[UIImage imageNamed:@"brain"];
     [self resetTime];
     timer = nil;
-
+    
 }
 
 - (IBAction)pauseTimer{
     [timer invalidate];
     timer = nil;
-
+    
 }
 
 
@@ -142,8 +142,8 @@ break;
     timerLabel.title = [NSString stringWithFormat:@"%i:%02d",minutes,subseconds];
     
     if(!timer)
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(subtractTime) userInfo:nil repeats:YES];
-
+        timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(subtractTime) userInfo:nil repeats:YES];
+    
 }
 
 -(void)resetTime{
@@ -175,8 +175,8 @@ break;
         self.navigationController.toolbar.tintColor = nil;
         [timer invalidate];
         timer = nil;
-
-
+        
+        
     }
 }
 
@@ -190,59 +190,55 @@ break;
     score   +=  30 * VuforiaA.selectedSegmentIndex;
     
     
-//    if (parked1A.selectedSegmentIndex==1){
-//        score+=5;
-//    }
-   
-
+    //    if (parked1A.selectedSegmentIndex==1){
+    //        score+=5;
+    //    }
+    
+    
     //Tele-Op
-//    score   +=  10*Crypto.selectedSegmentIndex;
-//    score   +=  20*ziplineT.selectedSegmentIndex;
-
+    //    score   +=  10*Crypto.selectedSegmentIndex;
+    //    score   +=  20*ziplineT.selectedSegmentIndex;
+    
     
     
     if (Crypto.selectedSegmentIndex == 0){
-        
         score += Columns1.selectedSegmentIndex * 20;
         score += Rows1.selectedSegmentIndex * 10;
-        score += Extra1.selectedSegmentIndex * 2;
-
+        score += ([totalGlyphs.text intValue]*2);
     }
     else if (Crypto.selectedSegmentIndex == 1){
-        score += 20;
+        score += 124;
         Columns1.selectedSegmentIndex   =   0;
         Rows1.selectedSegmentIndex      =   0;
-        Extra1.selectedSegmentIndex     =   0;
+        totalGlyphs.text                =   nil;
     }
     else if (Crypto.selectedSegmentIndex == 2){
-        score += 30;
+        score += 154;
         Columns1.selectedSegmentIndex   =   0;
         Rows1.selectedSegmentIndex      =   0;
-        Extra1.selectedSegmentIndex     =   0;
+        totalGlyphs.text                =   nil;
     }
-    
-    
     if (Crypto2.selectedSegmentIndex == 0){
-        
         score += Columns2.selectedSegmentIndex * 20;
         score += Rows2.selectedSegmentIndex * 10;
-        score += Extra2.selectedSegmentIndex * 2;
-        
+        score += ([totalGlyphs2.text intValue]*2);
     }
     else if (Crypto2.selectedSegmentIndex == 1){
-        score += 20;
+        score += 124;
         Columns2.selectedSegmentIndex   =   0;
         Rows2.selectedSegmentIndex      =   0;
-        Extra2.selectedSegmentIndex     =   0;
+        totalGlyphs2.text               =   nil;
     }
     else if (Crypto2.selectedSegmentIndex == 2){
-        score += 30;
+        score += 154;
         Columns2.selectedSegmentIndex   =   0;
         Rows2.selectedSegmentIndex      =   0;
-        Extra2.selectedSegmentIndex     =   0;
+        totalGlyphs2.text               =   nil;
     }
     
-
+    
+    
+    
     //End Game
     if (Zone1.selectedSegmentIndex == 0){
         upRightBonus1.selectedSegmentIndex   =   0;
@@ -265,10 +261,10 @@ break;
         score += 40;
     }
     score += upRightBonus2.selectedSegmentIndex*15;
-
+    
     score += Balanced1.selectedSegmentIndex * 20;
     score += Balanced2.selectedSegmentIndex * 20;
-
+    
     
     
     int height = self.navigationController.navigationBar.frame.size.height;
@@ -282,8 +278,8 @@ break;
     navLabel.textAlignment = UITextAlignmentCenter;
     self.navigationItem.titleView = navLabel;
     ((UILabel *)self.navigationItem.titleView).text =[NSString stringWithFormat:@"%d",score];
-
-
+    
+    
 }
 -(IBAction)reset{
     int score = 0;
@@ -295,12 +291,11 @@ break;
     Crypto.selectedSegmentIndex     =   0;
     Columns1.selectedSegmentIndex   =   0;
     Rows1.selectedSegmentIndex      =   0;
-    Extra1.selectedSegmentIndex     =   0;
-    
-    Crypto2.selectedSegmentIndex     =   0;
+    totalGlyphs.text                =   nil;
+    Crypto2.selectedSegmentIndex    =   0;
     Columns2.selectedSegmentIndex   =   0;
     Rows2.selectedSegmentIndex      =   0;
-    Extra2.selectedSegmentIndex     =   0;
+    totalGlyphs2.text               =   nil;
     
     Zone1.selectedSegmentIndex      =   0;
     upRightBonus1.selectedSegmentIndex = 0;
@@ -309,7 +304,7 @@ break;
     
     Balanced1.selectedSegmentIndex = 0;
     Balanced2.selectedSegmentIndex = 0;
-
+    
     
     
     
@@ -320,8 +315,8 @@ break;
     navLabel.textAlignment = UITextAlignmentCenter;
     self.navigationItem.titleView = navLabel;
     ((UILabel *)self.navigationItem.titleView).text =@"";
-
-
+    
+    
 }
 
 
@@ -335,3 +330,4 @@ break;
 
 
 @end
+

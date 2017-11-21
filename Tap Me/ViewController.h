@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  Relic-Recovery-iOS-Scoring
+//  Tap Me
 //
-//  Created by Neal Soni on 11/20/17.
+//  Created by Mike Jaoudi on 10/17/12.
 //
 //
 
@@ -16,7 +16,7 @@
     NSInteger seconds;
     NSInteger minutes;
     NSInteger subseconds;
-   
+    
     //Auto
     IBOutlet UISegmentedControl *JewelA;
     IBOutlet UITextField *GliphsA;
@@ -27,28 +27,30 @@
     IBOutlet UISegmentedControl *Crypto;
     IBOutlet UISegmentedControl *Columns1;
     IBOutlet UISegmentedControl *Rows1;
-    IBOutlet UISegmentedControl *Extra1;
-
+    IBOutlet UITextField *totalGlyphs;
+    
+    
     IBOutlet UISegmentedControl *Crypto2;
     IBOutlet UISegmentedControl *Columns2;
     IBOutlet UISegmentedControl *Rows2;
-    IBOutlet UISegmentedControl *Extra2;
-
+    IBOutlet UITextField *totalGlyphs2;
+    
     //Endgame
     IBOutlet UISegmentedControl *Zone1;
     IBOutlet UISegmentedControl *upRightBonus1;
     IBOutlet UISegmentedControl *Zone2;
     IBOutlet UISegmentedControl *upRightBonus2;
-
-
+    
+    
     IBOutlet UISegmentedControl *Balanced1;
     IBOutlet UISegmentedControl *Balanced2;
-
+    
     IBOutlet UIBarButtonItem *startButton;
     
-
+    
     NSTimer *timer; //ADD THIS!!
 }
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *pausePlay;
 
 - (IBAction) startTimer;
 - (IBAction) resetTimer;
@@ -62,3 +64,4 @@
 - (void)subtractTime;
 
 @end
+

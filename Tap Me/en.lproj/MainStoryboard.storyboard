@@ -116,8 +116,8 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15-45 pts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="332-ab-Z8p">
-                                                    <rect key="frame" x="164" y="26" width="47" height="12"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 pts per" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="332-ab-Z8p">
+                                                    <rect key="frame" x="163" y="26" width="49" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -290,6 +290,8 @@
                                                     <segments>
                                                         <segment title="0 Columns"/>
                                                         <segment title="1 Column"/>
+                                                        <segment title="2 Columns"/>
+                                                        <segment title="3 Columns"/>
                                                     </segments>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
@@ -313,46 +315,41 @@
                                                     <segments>
                                                         <segment title="0 Rows"/>
                                                         <segment title="1 Row"/>
+                                                        <segment title="2 Rows"/>
+                                                        <segment title="3 Rows"/>
+                                                        <segment title="4 Rows"/>
                                                     </segments>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="score" destination="1XL-E5-6NC" eventType="valueChanged" id="yv5-oB-aRd"/>
                                                     </connections>
                                                 </segmentedControl>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Glyphs in Cypher 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5y-r2-1Md">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Glyphs in Cypher 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5y-r2-1Md">
                                                     <rect key="frame" x="17" y="203" width="343" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bna-Mt-1gg" userLabel="Extra1">
-                                                    <rect key="frame" x="17" y="217" width="343" height="29"/>
-                                                    <segments>
-                                                        <segment title="0 Glyphs"/>
-                                                        <segment title="1"/>
-                                                        <segment title="2"/>
-                                                        <segment title="3"/>
-                                                        <segment title="4"/>
-                                                        <segment title="5"/>
-                                                        <segment title="6"/>
-                                                    </segments>
-                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <connections>
-                                                        <action selector="score" destination="1XL-E5-6NC" eventType="valueChanged" id="yUk-6R-iJK"/>
-                                                    </connections>
-                                                </segmentedControl>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cryptobox 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoZ-yG-tmz">
                                                     <rect key="frame" x="138" y="4" width="99" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5-80 pts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-jg-Le5">
-                                                    <rect key="frame" x="166" y="27" width="42.5" height="12"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2-154 pts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-jg-Le5">
+                                                    <rect key="frame" x="164" y="27" width="47" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Num" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="521-wV-wAP" userLabel="GliphsA">
+                                                    <rect key="frame" x="162" y="223" width="49.5" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="score" destination="1XL-E5-6NC" eventType="editingDidEnd" id="g4H-Ec-6en"/>
+                                                    </connections>
+                                                </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="3eq-q1-4d1" firstAttribute="top" secondItem="foR-pr-jgx" secondAttribute="bottom" constant="8" id="0Jb-nu-O2P"/>
@@ -367,22 +364,21 @@
                                                 <constraint firstItem="i5y-r2-1Md" firstAttribute="top" secondItem="LwP-4I-6Vg" secondAttribute="bottom" constant="10" id="JMG-2c-30Z"/>
                                                 <constraint firstItem="klA-CT-qs8" firstAttribute="centerX" secondItem="KAB-4X-dcb" secondAttribute="centerX" id="Kbi-kg-oaQ"/>
                                                 <constraint firstItem="3eq-q1-4d1" firstAttribute="leading" secondItem="KAB-4X-dcb" secondAttribute="leadingMargin" constant="1" id="LFd-Fe-Ixj"/>
-                                                <constraint firstItem="bna-Mt-1gg" firstAttribute="leading" secondItem="KAB-4X-dcb" secondAttribute="leadingMargin" constant="1" id="LKe-x7-O9L"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="3eq-q1-4d1" secondAttribute="trailing" constant="-1" id="O24-bd-ZBv"/>
                                                 <constraint firstItem="foR-pr-jgx" firstAttribute="leading" secondItem="KAB-4X-dcb" secondAttribute="leadingMargin" constant="1" id="Qlc-bf-yoP"/>
                                                 <constraint firstItem="X7y-Yt-lUH" firstAttribute="leading" secondItem="KAB-4X-dcb" secondAttribute="leadingMargin" constant="-1" id="Ril-iJ-70G"/>
                                                 <constraint firstItem="GoZ-yG-tmz" firstAttribute="centerX" secondItem="KAB-4X-dcb" secondAttribute="centerX" id="SHH-DI-4q0"/>
-                                                <constraint firstItem="bna-Mt-1gg" firstAttribute="top" secondItem="i5y-r2-1Md" secondAttribute="bottom" constant="2" id="Y9c-Ei-q2Q"/>
                                                 <constraint firstItem="X7y-Yt-lUH" firstAttribute="top" secondItem="YFi-T1-T2P" secondAttribute="bottom" constant="2" id="Z2D-i9-mqf"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="foR-pr-jgx" secondAttribute="trailing" constant="-1" id="cts-ps-qSc"/>
                                                 <constraint firstItem="0Ug-jg-Le5" firstAttribute="top" secondItem="KAB-4X-dcb" secondAttribute="topMargin" constant="16" id="f0g-bg-Ynz"/>
                                                 <constraint firstItem="0Ug-jg-Le5" firstAttribute="centerX" secondItem="KAB-4X-dcb" secondAttribute="centerX" id="gbp-Bs-8bJ"/>
                                                 <constraint firstItem="YFi-T1-T2P" firstAttribute="leading" secondItem="KAB-4X-dcb" secondAttribute="leadingMargin" constant="1" id="ggi-du-QQk"/>
+                                                <constraint firstItem="521-wV-wAP" firstAttribute="top" secondItem="i5y-r2-1Md" secondAttribute="bottom" constant="8" id="ixO-Ho-Rj1"/>
                                                 <constraint firstItem="klA-CT-qs8" firstAttribute="top" secondItem="0Ug-jg-Le5" secondAttribute="bottom" constant="8" id="nd9-CT-Nyf"/>
                                                 <constraint firstItem="i5y-r2-1Md" firstAttribute="trailing" secondItem="KAB-4X-dcb" secondAttribute="trailingMargin" constant="1" id="ooO-nP-fL1"/>
                                                 <constraint firstItem="GoZ-yG-tmz" firstAttribute="top" secondItem="KAB-4X-dcb" secondAttribute="top" constant="4" id="q6m-xV-hbZ"/>
+                                                <constraint firstItem="521-wV-wAP" firstAttribute="centerX" secondItem="KAB-4X-dcb" secondAttribute="centerX" id="rRN-Wy-emg"/>
                                                 <constraint firstItem="YFi-T1-T2P" firstAttribute="centerX" secondItem="KAB-4X-dcb" secondAttribute="centerX" constant="1" id="s5m-6V-2d5"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="bna-Mt-1gg" secondAttribute="trailing" constant="-1" id="sfp-jI-C9N"/>
                                                 <constraint firstItem="LwP-4I-6Vg" firstAttribute="leading" secondItem="KAB-4X-dcb" secondAttribute="leadingMargin" constant="1" id="vg5-B9-uea"/>
                                                 <constraint firstItem="YFi-T1-T2P" firstAttribute="top" secondItem="klA-CT-qs8" secondAttribute="bottom" constant="8" id="wNT-pU-F63"/>
                                             </constraints>
@@ -420,6 +416,8 @@
                                                     <segments>
                                                         <segment title="0 Columns"/>
                                                         <segment title="1 Column"/>
+                                                        <segment title="2 Columns"/>
+                                                        <segment title="3 Columns"/>
                                                     </segments>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
@@ -443,6 +441,9 @@
                                                     <segments>
                                                         <segment title="0 Rows"/>
                                                         <segment title="1 Row"/>
+                                                        <segment title="2 Rows"/>
+                                                        <segment title="3 Rows"/>
+                                                        <segment title="4 Rows"/>
                                                     </segments>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
@@ -455,22 +456,6 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iCH-cb-750" userLabel="Extra1">
-                                                    <rect key="frame" x="17" y="217" width="343" height="29"/>
-                                                    <segments>
-                                                        <segment title="0 Glyphs"/>
-                                                        <segment title="1"/>
-                                                        <segment title="2"/>
-                                                        <segment title="3"/>
-                                                        <segment title="4"/>
-                                                        <segment title="5"/>
-                                                        <segment title="6"/>
-                                                    </segments>
-                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <connections>
-                                                        <action selector="score" destination="1XL-E5-6NC" eventType="valueChanged" id="XG6-3F-mSf"/>
-                                                    </connections>
-                                                </segmentedControl>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cryptobox 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY5-t3-oUn">
                                                     <rect key="frame" x="136" y="4" width="101" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -483,6 +468,14 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Num" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0I-aG-3lD" userLabel="GliphsA">
+                                                    <rect key="frame" x="163" y="221" width="49.5" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="score" destination="1XL-E5-6NC" eventType="editingDidEnd" id="Ued-7c-aIs"/>
+                                                    </connections>
+                                                </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="wY5-t3-oUn" firstAttribute="centerX" secondItem="RFW-4G-Hxl" secondAttribute="centerX" constant="-1" id="0oU-dx-cyZ"/>
@@ -492,7 +485,6 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="pqB-1Z-Nni" secondAttribute="trailing" constant="-1" id="5Z1-Az-a0v"/>
                                                 <constraint firstItem="8sY-0l-M6N" firstAttribute="leading" secondItem="RFW-4G-Hxl" secondAttribute="leadingMargin" constant="-1" id="6OO-HG-8PE"/>
                                                 <constraint firstItem="AtZ-AY-5cf" firstAttribute="top" secondItem="LLD-rD-tSR" secondAttribute="bottom" constant="10" id="BWG-NT-HIk"/>
-                                                <constraint firstItem="iCH-cb-750" firstAttribute="top" secondItem="AtZ-AY-5cf" secondAttribute="bottom" constant="2" id="C4Z-xb-ZeA"/>
                                                 <constraint firstItem="AtZ-AY-5cf" firstAttribute="trailing" secondItem="RFW-4G-Hxl" secondAttribute="trailingMargin" constant="1" id="Cbj-RQ-q6n"/>
                                                 <constraint firstItem="pqB-1Z-Nni" firstAttribute="leading" secondItem="RFW-4G-Hxl" secondAttribute="leadingMargin" constant="1" id="DuL-BP-vk7"/>
                                                 <constraint firstItem="e6g-C3-cdt" firstAttribute="leading" secondItem="RFW-4G-Hxl" secondAttribute="leadingMargin" constant="1" id="Dup-rU-rfO"/>
@@ -502,15 +494,15 @@
                                                 <constraint firstItem="wY5-t3-oUn" firstAttribute="top" secondItem="RFW-4G-Hxl" secondAttribute="top" constant="4" id="KaM-oG-GJz"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="e6g-C3-cdt" secondAttribute="trailing" constant="-1" id="Khz-Bc-BXC"/>
                                                 <constraint firstItem="XEM-UK-Zex" firstAttribute="top" secondItem="RFW-4G-Hxl" secondAttribute="topMargin" constant="16" id="P1C-i9-tza"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="iCH-cb-750" secondAttribute="trailing" constant="-1" id="Xu5-IN-HyC"/>
                                                 <constraint firstItem="LLD-rD-tSR" firstAttribute="top" secondItem="YEJ-EX-idx" secondAttribute="bottom" constant="1" id="blT-ih-Wtt"/>
                                                 <constraint firstItem="5Ij-UB-bAT" firstAttribute="leading" secondItem="RFW-4G-Hxl" secondAttribute="leadingMargin" id="ecx-UG-bdK"/>
+                                                <constraint firstItem="l0I-aG-3lD" firstAttribute="top" secondItem="AtZ-AY-5cf" secondAttribute="bottom" constant="6" id="ks4-4p-xaJ"/>
                                                 <constraint firstItem="XEM-UK-Zex" firstAttribute="centerX" secondItem="RFW-4G-Hxl" secondAttribute="centerX" id="l4q-kr-0Ob"/>
                                                 <constraint firstItem="pqB-1Z-Nni" firstAttribute="top" secondItem="5Ij-UB-bAT" secondAttribute="bottom" constant="8" id="mPS-hr-HDi"/>
                                                 <constraint firstItem="5Ij-UB-bAT" firstAttribute="centerX" secondItem="RFW-4G-Hxl" secondAttribute="centerX" id="qUS-r4-UwP"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="8sY-0l-M6N" secondAttribute="trailing" constant="1" id="qfU-Ko-zvd"/>
-                                                <constraint firstItem="iCH-cb-750" firstAttribute="leading" secondItem="RFW-4G-Hxl" secondAttribute="leadingMargin" constant="1" id="s8d-Ox-ypM"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="LLD-rD-tSR" secondAttribute="trailing" constant="-1" id="tCu-ys-58R"/>
+                                                <constraint firstItem="l0I-aG-3lD" firstAttribute="centerX" secondItem="RFW-4G-Hxl" secondAttribute="centerX" id="uSP-Iq-5u2"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="YEJ-EX-idx" secondAttribute="trailing" constant="-1" id="vJ4-Ka-WpV"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="5Ij-UB-bAT" secondAttribute="trailing" id="wfi-pO-wq2"/>
                                                 <constraint firstItem="e6g-C3-cdt" firstAttribute="top" secondItem="8sY-0l-M6N" secondAttribute="bottom" constant="1" id="xga-0e-X9k"/>
@@ -813,8 +805,6 @@
                         <outlet property="Columns2" destination="e6g-C3-cdt" id="Vcw-hK-Kh1"/>
                         <outlet property="Crypto" destination="klA-CT-qs8" id="Ovh-3a-JHp"/>
                         <outlet property="Crypto2" destination="5Ij-UB-bAT" id="H7E-V5-8c4"/>
-                        <outlet property="Extra1" destination="bna-Mt-1gg" id="bIq-tc-CG3"/>
-                        <outlet property="Extra2" destination="iCH-cb-750" id="Be8-wa-ImI"/>
                         <outlet property="GliphsA" destination="k0V-2s-QQ9" id="F0f-5d-S6n"/>
                         <outlet property="JewelA" destination="MLV-su-rMD" id="7Z3-Qy-Ul7"/>
                         <outlet property="Rows1" destination="LwP-4I-6Vg" id="IVR-am-DcY"/>
@@ -824,8 +814,11 @@
                         <outlet property="Zone1" destination="Mat-9t-NJp" id="vND-Cu-qzR"/>
                         <outlet property="Zone2" destination="c9T-Hp-ZBB" id="XZ9-g2-fh1"/>
                         <outlet property="gameMode" destination="vLb-HW-94L" id="Zhb-Ib-qoC"/>
+                        <outlet property="pausePlay" destination="6eI-fk-q8l" id="qJE-zc-EkG"/>
                         <outlet property="startButton" destination="6eI-fk-q8l" id="isS-hp-qee"/>
                         <outlet property="timerLabel" destination="gdB-ZB-w1e" id="TAw-Rf-BM3"/>
+                        <outlet property="totalGlyphs" destination="521-wV-wAP" id="c5j-fR-dn9"/>
+                        <outlet property="totalGlyphs2" destination="l0I-aG-3lD" id="koQ-Yg-XwF"/>
                         <outlet property="upRightBonus1" destination="6u4-5U-pUX" id="WQg-iG-IKd"/>
                         <outlet property="upRightBonus2" destination="X9R-9h-pcf" id="hre-JB-DDd"/>
                     </connections>
@@ -1138,7 +1131,7 @@
                                         <rect key="frame" x="0.0" y="637.5" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="598-NN-n6f" id="8Na-Om-rJI">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lvb-JD-EPI">
@@ -1186,7 +1179,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Spark Robotics - FTC 12701" id="ljT-2d-VUu">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="gC4-aQ-ec0"/>
+                        <barButtonItem key="backBarButtonItem" id="gC4-aQ-ec0"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h39-Wx-7hi" userLabel="First Responder" sceneMemberID="firstResponder"/>
