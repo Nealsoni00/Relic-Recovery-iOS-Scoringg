@@ -4,16 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>RES-Q.xcscheme</key>
+		<key>Pods-Relic Scoring.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Relic Scoring.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

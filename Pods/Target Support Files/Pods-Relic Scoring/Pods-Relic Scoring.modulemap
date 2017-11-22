@@ -1,0 +1,6 @@
+framework module Pods_Relic_Scoring {
+  umbrella header "Pods-Relic Scoring-umbrella.h"
+
+  export *
+  module * { export * }
+}

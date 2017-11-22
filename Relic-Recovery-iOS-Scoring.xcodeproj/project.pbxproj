@@ -28,6 +28,7 @@
 		368C46461FC4987000A0F37F /* safezone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C463B1FC4985700A0F37F /* safezone@2x.png */; };
 		368C46471FC4987000A0F37F /* glyphs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C463C1FC4985F00A0F37F /* glyphs@2x.png */; };
 		368C46481FC4987000A0F37F /* ballanced@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C463D1FC4986800A0F37F /* ballanced@2x.png */; };
+		4C4A1AA526D0845B13CB59B6 /* Pods_Relic_Scoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98713E8F2B0B2C2C5BAD24FE /* Pods_Relic_Scoring.framework */; };
 		6F795ED3162F4C81001F522A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F795ED2162F4C81001F522A /* UIKit.framework */; };
 		6F795ED5162F4C81001F522A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F795ED4162F4C81001F522A /* Foundation.framework */; };
 		6F795ED7162F4C81001F522A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F795ED6162F4C81001F522A /* CoreGraphics.framework */; };
@@ -83,6 +84,8 @@
 		368C463B1FC4985700A0F37F /* safezone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safezone@2x.png"; sourceTree = "<group>"; };
 		368C463C1FC4985F00A0F37F /* glyphs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphs@2x.png"; sourceTree = "<group>"; };
 		368C463D1FC4986800A0F37F /* ballanced@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballanced@2x.png"; sourceTree = "<group>"; };
+		3ED1C886829004AA25D92FE8 /* Pods-Relic Scoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relic Scoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Relic Scoring/Pods-Relic Scoring.debug.xcconfig"; sourceTree = "<group>"; };
+		4F6D3BD97DE6C5EC814B2440 /* Pods-Relic Scoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relic Scoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-Relic Scoring/Pods-Relic Scoring.release.xcconfig"; sourceTree = "<group>"; };
 		6F795ECE162F4C81001F522A /* Scorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F795ED2162F4C81001F522A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F795ED4162F4C81001F522A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +102,7 @@
 		6F795EEB162F4C81001F522A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6F795EED162F4C81001F522A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6F795EEE162F4C81001F522A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		98713E8F2B0B2C2C5BAD24FE /* Pods_Relic_Scoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Relic_Scoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D058042419BBC425004D7F9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D05E473A19AFC64F000F00BD /* joystick-w@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joystick-w@2x.png"; sourceTree = "<group>"; };
 		D05E473C19AFC735000F00BD /* stopwatch-w@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stopwatch-w@2x.png"; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 				6F795ED3162F4C81001F522A /* UIKit.framework in Frameworks */,
 				6F795ED5162F4C81001F522A /* Foundation.framework in Frameworks */,
 				6F795ED7162F4C81001F522A /* CoreGraphics.framework in Frameworks */,
+				4C4A1AA526D0845B13CB59B6 /* Pods_Relic_Scoring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +148,7 @@
 				6F795ED8162F4C81001F522A /* Relic-Recovery-iOS-Scoring */,
 				6F795ED1162F4C81001F522A /* Frameworks */,
 				6F795ECF162F4C81001F522A /* Products */,
+				E31476BB405B3844284DF3B5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +166,7 @@
 				6F795ED2162F4C81001F522A /* UIKit.framework */,
 				6F795ED4162F4C81001F522A /* Foundation.framework */,
 				6F795ED6162F4C81001F522A /* CoreGraphics.framework */,
+				98713E8F2B0B2C2C5BAD24FE /* Pods_Relic_Scoring.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,6 +239,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E31476BB405B3844284DF3B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3ED1C886829004AA25D92FE8 /* Pods-Relic Scoring.debug.xcconfig */,
+				4F6D3BD97DE6C5EC814B2440 /* Pods-Relic Scoring.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F795EF2162F4C81001F522A /* Build configuration list for PBXNativeTarget "Relic Scoring" */;
 			buildPhases = (
+				F5CADE56A12429CABE0436A8 /* [CP] Check Pods Manifest.lock */,
 				6F795ECA162F4C81001F522A /* Sources */,
 				6F795ECB162F4C81001F522A /* Frameworks */,
 				6F795ECC162F4C81001F522A /* Resources */,
+				296C5FBD9D1B7F80114A3915 /* [CP] Embed Pods Frameworks */,
+				DCD31E8D5B7FA85027B362D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,6 +355,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		296C5FBD9D1B7F80114A3915 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Relic Scoring/Pods-Relic Scoring-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCD31E8D5B7FA85027B362D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Relic Scoring/Pods-Relic Scoring-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5CADE56A12429CABE0436A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Relic Scoring-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F795ECA162F4C81001F522A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -423,6 +493,7 @@
 		};
 		6F795EF3162F4C81001F522A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ED1C886829004AA25D92FE8 /* Pods-Relic Scoring.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -447,6 +518,7 @@
 		};
 		6F795EF4162F4C81001F522A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6D3BD97DE6C5EC814B2440 /* Pods-Relic Scoring.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
