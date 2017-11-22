@@ -17,6 +17,17 @@
 		36020B381FC3D53900A06A84 /* infoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36020B371FC3D53900A06A84 /* infoVC.swift */; };
 		36020B3C1FC3E54D00A06A84 /* Logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 36020B3B1FC3E54D00A06A84 /* Logo2.png */; };
 		3606D3F71FC3E5A200678EA0 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3606D3F61FC3E5A100678EA0 /* Logo@2x.png */; };
+		368C463E1FC4987000A0F37F /* glyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C46331FC4980400A0F37F /* glyph@2x.png */; };
+		368C463F1FC4987000A0F37F /* safezoneB@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C46341FC4980D00A0F37F /* safezoneB@2x.png */; };
+		368C46401FC4987000A0F37F /* vuforia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C46351FC4981700A0F37F /* vuforia@2x.png */; };
+		368C46411FC4987000A0F37F /* relic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C46361FC4982000A0F37F /* relic@2x.png */; };
+		368C46421FC4987000A0F37F /* column@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C46371FC4982C00A0F37F /* column@2x.png */; };
+		368C46431FC4987000A0F37F /* cypher@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C46381FC4983500A0F37F /* cypher@2x.png */; };
+		368C46441FC4987000A0F37F /* jewel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C46391FC4983C00A0F37F /* jewel@2x.png */; };
+		368C46451FC4987000A0F37F /* row@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C463A1FC4985000A0F37F /* row@2x.png */; };
+		368C46461FC4987000A0F37F /* safezone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C463B1FC4985700A0F37F /* safezone@2x.png */; };
+		368C46471FC4987000A0F37F /* glyphs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C463C1FC4985F00A0F37F /* glyphs@2x.png */; };
+		368C46481FC4987000A0F37F /* ballanced@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C463D1FC4986800A0F37F /* ballanced@2x.png */; };
 		6F795ED3162F4C81001F522A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F795ED2162F4C81001F522A /* UIKit.framework */; };
 		6F795ED5162F4C81001F522A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F795ED4162F4C81001F522A /* Foundation.framework */; };
 		6F795ED7162F4C81001F522A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F795ED6162F4C81001F522A /* CoreGraphics.framework */; };
@@ -61,6 +72,17 @@
 		36020B3B1FC3E54D00A06A84 /* Logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo2.png; path = ../../../Downloads/Logo2.png; sourceTree = "<group>"; };
 		3606D3F61FC3E5A100678EA0 /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2x.png"; sourceTree = "<group>"; };
 		3647570B1FC3E990003B5492 /* RES-Q-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RES-Q-Bridging-Header.h"; sourceTree = "<group>"; };
+		368C46331FC4980400A0F37F /* glyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph@2x.png"; sourceTree = "<group>"; };
+		368C46341FC4980D00A0F37F /* safezoneB@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safezoneB@2x.png"; sourceTree = "<group>"; };
+		368C46351FC4981700A0F37F /* vuforia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vuforia@2x.png"; sourceTree = "<group>"; };
+		368C46361FC4982000A0F37F /* relic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "relic@2x.png"; sourceTree = "<group>"; };
+		368C46371FC4982C00A0F37F /* column@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "column@2x.png"; sourceTree = "<group>"; };
+		368C46381FC4983500A0F37F /* cypher@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cypher@2x.png"; sourceTree = "<group>"; };
+		368C46391FC4983C00A0F37F /* jewel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jewel@2x.png"; sourceTree = "<group>"; };
+		368C463A1FC4985000A0F37F /* row@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "row@2x.png"; sourceTree = "<group>"; };
+		368C463B1FC4985700A0F37F /* safezone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safezone@2x.png"; sourceTree = "<group>"; };
+		368C463C1FC4985F00A0F37F /* glyphs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphs@2x.png"; sourceTree = "<group>"; };
+		368C463D1FC4986800A0F37F /* ballanced@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballanced@2x.png"; sourceTree = "<group>"; };
 		6F795ECE162F4C81001F522A /* Scorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F795ED2162F4C81001F522A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F795ED4162F4C81001F522A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -162,6 +184,17 @@
 		6F795ED9162F4C81001F522A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				368C463D1FC4986800A0F37F /* ballanced@2x.png */,
+				368C46371FC4982C00A0F37F /* column@2x.png */,
+				368C46381FC4983500A0F37F /* cypher@2x.png */,
+				368C46331FC4980400A0F37F /* glyph@2x.png */,
+				368C463C1FC4985F00A0F37F /* glyphs@2x.png */,
+				368C46391FC4983C00A0F37F /* jewel@2x.png */,
+				368C46361FC4982000A0F37F /* relic@2x.png */,
+				368C463A1FC4985000A0F37F /* row@2x.png */,
+				368C463B1FC4985700A0F37F /* safezone@2x.png */,
+				368C46341FC4980D00A0F37F /* safezoneB@2x.png */,
+				368C46351FC4981700A0F37F /* vuforia@2x.png */,
 				3606D3F61FC3E5A100678EA0 /* Logo@2x.png */,
 				36020B341FC3CF9500A06A84 /* RelicRecovery Logo.png */,
 				36020B291FC3CD9700A06A84 /* icons8-info-50.png */,
@@ -264,24 +297,35 @@
 				D0F188C219BBB3EC00480253 /* 797-archive@2x.png in Resources */,
 				D0B4444619B16472007C4CAB /* ellie-logoandtext-trans.png in Resources */,
 				D0F188BD19BBB14900480253 /* 66-checked@2x.png in Resources */,
+				368C46471FC4987000A0F37F /* glyphs@2x.png in Resources */,
 				36020B311FC3CDAA00A06A84 /* setting@2x.png in Resources */,
 				D0B4444A19B166E4007C4CAB /* facebook@2x.png in Resources */,
 				D058042519BBC425004D7F9B /* Images.xcassets in Resources */,
 				D05E473B19AFC64F000F00BD /* joystick-w@2x.png in Resources */,
 				6F795EE5162F4C81001F522A /* Default.png in Resources */,
+				368C463F1FC4987000A0F37F /* safezoneB@2x.png in Resources */,
+				368C46451FC4987000A0F37F /* row@2x.png in Resources */,
+				368C46481FC4987000A0F37F /* ballanced@2x.png in Resources */,
 				36020B2D1FC3CDAA00A06A84 /* info@2x.png in Resources */,
+				368C46411FC4987000A0F37F /* relic@2x.png in Resources */,
 				D0FFE59D19BDF378007E6620 /* ftc-app-icon-app-120.png in Resources */,
+				368C46441FC4987000A0F37F /* jewel@2x.png in Resources */,
 				D05E473F19AFC7F9000F00BD /* white_logo@2x.png in Resources */,
 				D0F188BE19BBB14900480253 /* 66-unchecked@2x.png in Resources */,
 				D05EB8DD19AFC20200F2A161 /* brain-w@2x.png in Resources */,
+				368C46431FC4987000A0F37F /* cypher@2x.png in Resources */,
 				36020B2F1FC3CDAA00A06A84 /* mail@2x.png in Resources */,
 				D0B4444819B16665007C4CAB /* 706-cloud@2x.png in Resources */,
 				D05EB8D719AF5D9600F2A161 /* brain@2x.png in Resources */,
 				6F795EE7162F4C81001F522A /* Default@2x.png in Resources */,
 				6F795EE9162F4C81001F522A /* Default-568h@2x.png in Resources */,
+				368C463E1FC4987000A0F37F /* glyph@2x.png in Resources */,
 				36020B351FC3CF9800A06A84 /* RelicRecovery Logo.png in Resources */,
 				36020B2E1FC3CDAA00A06A84 /* icons8-info-50.png in Resources */,
 				6F795EEC162F4C81001F522A /* MainStoryboard.storyboard in Resources */,
+				368C46401FC4987000A0F37F /* vuforia@2x.png in Resources */,
+				368C46421FC4987000A0F37F /* column@2x.png in Resources */,
+				368C46461FC4987000A0F37F /* safezone@2x.png in Resources */,
 				D05EB8D519AF5D0600F2A161 /* joystick@2x.png in Resources */,
 				D0FFE59F19BDF39F007E6620 /* ftc-app-icon-app-80.png in Resources */,
 				36020B331FC3CE0400A06A84 /* checked@2x.png in Resources */,
