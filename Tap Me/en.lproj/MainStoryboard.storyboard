@@ -827,7 +827,7 @@
             </objects>
             <point key="canvasLocation" x="1010.5" y="22"/>
         </scene>
-        <!--Spark Robotics - FTC 12701-->
+        <!--About-->
         <scene sceneID="yhF-OJ-nrx">
             <objects>
                 <tableViewController id="Ko3-UR-cgC" customClass="InfoViewController" customModule="Scorer" customModuleProvider="target" sceneMemberID="viewController">
@@ -900,7 +900,7 @@
                                             <segue destination="BFL-7W-XHt" kind="push" id="iBg-lF-rx8"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="vWM-fu-Epz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" id="vWM-fu-Epz">
                                         <rect key="frame" x="0.0" y="289.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vWM-fu-Epz" id="iqF-3p-k7C">
@@ -929,8 +929,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.13895939290523529" green="0.28786525130271912" blue="0.44716915488243103" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <segue destination="9uW-mh-tDc" kind="push" id="BSV-TB-13Z"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="gpN-zk-xZ3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" id="gpN-zk-xZ3">
                                         <rect key="frame" x="0.0" y="333.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gpN-zk-xZ3" id="cPC-ZB-3JX">
@@ -1121,7 +1124,7 @@
                                         <rect key="frame" x="0.0" y="625.5" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UlF-hV-XYL" id="gRT-yw-Fvb">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail.png" translatesAutoresizingMaskIntoConstraints="NO" id="xnl-AZ-bpt">
@@ -1164,7 +1167,7 @@
                                         <rect key="frame" x="0.0" y="681.5" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="598-NN-n6f" id="8Na-Om-rJI">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lvb-JD-EPI">
@@ -1211,9 +1214,8 @@
                             <outlet property="delegate" destination="Ko3-UR-cgC" id="6FQ-Z2-qrL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Spark Robotics - FTC 12701" id="ljT-2d-VUu">
-                        <barButtonItem key="backBarButtonItem" id="gC4-aQ-ec0"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="About" id="ljT-2d-VUu"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h39-Wx-7hi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1250,49 +1252,59 @@
         <scene sceneID="8M9-ki-Zp6">
             <objects>
                 <viewController title="About" id="BFL-7W-XHt" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RaG-tz-sUv"/>
-                        <viewControllerLayoutGuide type="bottom" id="ULC-YK-Gk3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CqA-hF-zJq">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uty-7I-KcJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2pz-dU-PGU">
-                                <rect key="frame" x="4" y="8" width="368" height="543"/>
-                                <color key="backgroundColor" red="0.13895939290523529" green="0.28786525130271912" blue="0.44716915488243103" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <mutableString key="text">FIRST Tech Challenge (FTC) team 6081, i²robotics, was founded for the 2013 FTC Season and is based in Westport, Connecticut. We are made up of Westport and Weston high school students who all share a similar interest in robotics.
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.2439560741" green="0.27829000349999999" blue="0.2981418669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="qfd-XK-foZ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SparkRobotics.png" translatesAutoresizingMaskIntoConstraints="NO" id="L1t-Tf-9Uq">
+                                    <rect key="frame" x="97" y="10" width="180" height="147"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="180" id="Jap-Jg-IzW"/>
+                                        <constraint firstAttribute="height" constant="147" id="PeA-d3-NqE"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="L1t-Tf-9Uq" firstAttribute="centerY" secondItem="qfd-XK-foZ" secondAttribute="centerY" id="Ci2-9h-RBL"/>
+                                <constraint firstItem="L1t-Tf-9Uq" firstAttribute="centerX" secondItem="qfd-XK-foZ" secondAttribute="centerX" id="WpD-k8-Qlt"/>
+                                <constraint firstItem="L1t-Tf-9Uq" firstAttribute="centerX" secondItem="qfd-XK-foZ" secondAttribute="centerX" id="chp-S1-cC2"/>
+                                <constraint firstItem="L1t-Tf-9Uq" firstAttribute="centerY" secondItem="qfd-XK-foZ" secondAttribute="centerY" id="z2j-nD-48F"/>
+                            </constraints>
+                        </view>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" id="aKb-dr-2Si">
+                            <rect key="frame" x="0.0" y="166" width="375" height="582"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <mutableString key="text">Spark Robotics, FTC Team 12701, is a newly founded robotics team made up of eight high schools students from Westport, CT. 
 
-i²robotics began as “Minuteman Robotics” with Alex Davis and Peter Sauer. They had just finished their last season on FIRST Lego League (FLL) Team Snap and wanted to continue their robotics experience into high school. They formed and registered team 6081 along with Sathya Levy and were soon joined by Alex Somlo and Julian Garrison. Named after the symbol of Westport, Minuteman Robotics was thus born.
+Spark competes in robotics tournaments sponsored by FIRST (For Inspiration and Recognition of Science and Technology), a nonprofit organization that uses a sports model to inspire kids of all ages in science, technology, engineering, art, and math (STEAM). In addition to building a competitive robot, we take great care to reach out to our community to teach and support them in the areas of FIRST &amp; STEAM. 
 
-We began our robotics experience with the 2013 FTC Ring It Up! Challenge. We participated in the CT State Competition (there were no CT qualifiers that year) and only one other scrimmage. As a rookie team, we didn’t at the time appreciate the value of attending an assortment of scrimmages and competitions. From robot-building and programming skills to outreach and judging, we learned many lessons that first year that we would ultimately carry with us into the next season.
-
-After States, we were joined in the off-season by three new members: Jordan Darefsky, Jun Pritsker, and Elaine Hong. While Jordan is a fellow Staples High School student, Elaine and Jun both attend Weston High School. As such, a name change was needed for the team, to replace the “Minuteman” and make the name more inclusive. We became the “i²robotics” we are today, whose origin, pronunciation, and significance can be found on the Name page.
-
-As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the knowledge we gained from our last season, we were more prepared for the challenges ahead. We started meeting earlier for longer hours, registered for more competitions, and more thoroughly documented our progress in the engineering notebook. On the whole, though, while we were pleased with our first season, we simply wanted to accomplish and achieve so much more.</mutableString>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="2pz-dU-PGU" firstAttribute="leading" secondItem="CqA-hF-zJq" secondAttribute="leadingMargin" constant="-12" id="73s-Lv-w4O"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2pz-dU-PGU" secondAttribute="trailing" constant="-13" id="J70-pC-9B9"/>
-                            <constraint firstItem="ULC-YK-Gk3" firstAttribute="top" secondItem="2pz-dU-PGU" secondAttribute="bottom" constant="8" id="LP5-He-YDi"/>
-                            <constraint firstItem="2pz-dU-PGU" firstAttribute="top" secondItem="RaG-tz-sUv" secondAttribute="bottom" constant="8" id="vms-Zq-6C3"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="SJh-EK-FII"/>
+Although Spark is just beginning, our members are certainly not amateurs. Most of our members have competed on other teams in the past, and are very experienced. We decided to start this new team to help foster a perfect learning environment while doing what we love. 
+</mutableString>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="About Spark Robotics" id="SJh-EK-FII">
+                        <barButtonItem key="backBarButtonItem" title=" " id="mZ5-On-EI0"/>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhD-pn-RXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2066" y="-918"/>
+            <point key="canvasLocation" x="2060" y="-919"/>
         </scene>
-        <!--Scoring Breakout-->
+        <!--Point Breakout-->
         <scene sceneID="Z8F-Cc-Uy0">
             <objects>
-                <tableViewController id="3NC-KG-ELj" customClass="InfoViewController" customModule="Scorer" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="3NC-KG-ELj" customClass="PointBreakoutVC" customModule="Scorer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="0va-G2-kIv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1340,7 +1352,7 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
                                                 <constraint firstAttribute="trailing" secondItem="tgw-EH-w2E" secondAttribute="trailing" id="jc8-26-xWE"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.19637052714824677" green="0.374052494764328" blue="0.20398570597171783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="zcm-yl-QVC">
                                         <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
@@ -1382,7 +1394,7 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
                                                 <constraint firstItem="tKq-xX-w6S" firstAttribute="centerY" secondItem="1SU-PD-aKh" secondAttribute="centerY" id="zuH-fD-JGQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.19637052714824677" green="0.374052494764328" blue="0.20398570597171783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="hYY-3U-Ker">
                                         <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
@@ -1423,7 +1435,7 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
                                                 <constraint firstAttribute="trailing" secondItem="1Ba-pm-glo" secondAttribute="trailing" id="rYW-AN-nvP"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.19637052714824677" green="0.374052494764328" blue="0.20398570597171783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="goV-8P-wqO">
                                         <rect key="frame" x="0.0" y="187.5" width="375" height="44"/>
@@ -1464,7 +1476,7 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
                                                 <constraint firstAttribute="trailing" secondItem="brg-qS-AqJ" secondAttribute="trailing" id="lf0-6P-29P"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.19637052714824677" green="0.374052494764328" blue="0.20398570597171783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1678,7 +1690,7 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
                                                 <constraint firstAttribute="trailing" secondItem="ZcH-Rw-e5b" secondAttribute="trailing" id="uyz-gu-Lpx"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.34676879644393921" green="0.1492370069026947" blue="0.14126823842525482" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="F0a-5K-y2g">
                                         <rect key="frame" x="0.0" y="563.5" width="375" height="44"/>
@@ -1719,7 +1731,7 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
                                                 <constraint firstItem="7Cs-1N-LCy" firstAttribute="centerY" secondItem="3Pq-hJ-mZJ" secondAttribute="centerY" id="vy5-2c-OPt"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.34676879644393921" green="0.1492370069026947" blue="0.14126823842525482" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="cYu-vn-B2Y">
                                         <rect key="frame" x="0.0" y="607.5" width="375" height="44"/>
@@ -1760,7 +1772,7 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
                                                 <constraint firstItem="cqi-Qa-29g" firstAttribute="leading" secondItem="E3k-Ol-kNp" secondAttribute="leading" constant="12" id="zTx-m1-Zhz"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.34676879644393921" green="0.1492370069026947" blue="0.14126823842525482" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="OQ2-ir-Sne">
                                         <rect key="frame" x="0.0" y="651.5" width="375" height="44"/>
@@ -1801,7 +1813,7 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
                                                 <constraint firstItem="U3M-VQ-Eaj" firstAttribute="centerY" secondItem="Z8Z-kY-zyk" secondAttribute="centerY" id="oOS-Rs-BdR"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.34676879644393921" green="0.1492370069026947" blue="0.14126823842525482" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="njE-co-0vY">
                                         <rect key="frame" x="0.0" y="695.5" width="375" height="44"/>
@@ -1843,7 +1855,7 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
                                                 <constraint firstItem="y8f-gI-ukL" firstAttribute="centerY" secondItem="EHl-TY-x0L" secondAttribute="centerY" id="kgf-MG-R2i"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.34676879644393921" green="0.1492370069026947" blue="0.14126823842525482" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1853,53 +1865,58 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
                             <outlet property="delegate" destination="3NC-KG-ELj" id="meC-TC-x7n"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Scoring Breakout" id="0De-PU-JCh">
+                    <navigationItem key="navigationItem" title="Point Breakout" id="0De-PU-JCh">
                         <barButtonItem key="backBarButtonItem" id="Rzu-0a-4U8"/>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="800"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9t-2R-ofF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2060" y="795"/>
+            <point key="canvasLocation" x="2060" y="589"/>
         </scene>
         <!--About-->
         <scene sceneID="IlV-cq-ZIQ">
             <objects>
                 <viewController title="About" id="9uW-mh-tDc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nrd-fb-3Ji"/>
-                        <viewControllerLayoutGuide type="bottom" id="SaS-LL-Jzd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="h0t-ij-2lh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-M9-Hea">
-                                <rect key="frame" x="4" y="28" width="368" height="631"/>
-                                <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <mutableString key="text">FIRST Tech Challenge (FTC) team 6081, i²robotics, was founded for the 2013 FTC Season and is based in Westport, Connecticut. We are made up of Westport and Weston high school students who all share a similar interest in robotics.
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ddW-nZ-z7z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="OrH-7v-vF6">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RelicRecovery.png" translatesAutoresizingMaskIntoConstraints="NO" id="zeD-Qi-qJy">
+                                    <rect key="frame" x="97" y="9.5" width="180" height="147"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="147" id="MN3-Do-b38"/>
+                                        <constraint firstAttribute="width" constant="180" id="p0I-Ii-6QZ"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="zeD-Qi-qJy" firstAttribute="centerX" secondItem="OrH-7v-vF6" secondAttribute="centerX" id="Lmy-3j-fPG"/>
+                                <constraint firstItem="zeD-Qi-qJy" firstAttribute="centerX" secondItem="OrH-7v-vF6" secondAttribute="centerX" id="QEi-Xu-aC7"/>
+                                <constraint firstItem="zeD-Qi-qJy" firstAttribute="centerY" secondItem="OrH-7v-vF6" secondAttribute="centerY" id="Z2l-Nc-fDi"/>
+                                <constraint firstItem="zeD-Qi-qJy" firstAttribute="centerY" secondItem="OrH-7v-vF6" secondAttribute="centerY" id="s0a-od-Kro"/>
+                            </constraints>
+                        </view>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" id="bDS-4q-MNN">
+                            <rect key="frame" x="0.0" y="166" width="375" height="950.5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <mutableString key="text">FIRST RELIC RECOVERY℠ Presented by Qualcomm Incorporated is played on a 12 ft. × 12 ft. (3.7m × 3.7m) square field with approximately 1 ft. (0.3m) high walls and a soft foam mat floor. The object of the game is to attain a higher score than the opposing alliance by (1) scoring Glyphs into the Cryptoboxes and completing rows, column, and ciphers, (2) transferring Relics to the Recovery Zone, (3) retrieving Jewels, (4) parking on the Balancing Stones, and (5) navigating to specific parts of the Playing Field.
 
-i²robotics began as “Minuteman Robotics” with Alex Davis and Peter Sauer. They had just finished their last season on FIRST Lego League (FLL) Team Snap and wanted to continue their robotics experience into high school. They formed and registered team 6081 along with Sathya Levy and were soon joined by Alex Somlo and Julian Garrison. Named after the symbol of Westport, Minuteman Robotics was thus born.
+The field is divided in the middle into a “red” and a “blue” side corresponding to the two alliances. In the center of the field is a taped off area that hold the Glyphs. The scoring elements for FIRST RELIC RECOVERY℠ are 48 alliance-neutral Glyphs (24 gray and 24 brown), 8 alliance-specific Jewels (4 per alliance) and 4 alliance- specific Relics (2 per Alliance). There are 4 alliance- specific Cryptoboxes (2 per Alliance) with taped off safe zones in front of each. 
 
-We began our robotics experience with the 2013 FTC Ring It Up! Challenge. We participated in the CT State Competition (there were no CT qualifiers that year) and only one other scrimmage. As a rookie team, we didn’t at the time appreciate the value of attending an assortment of scrimmages and competitions. From robot-building and programming skills to outreach and judging, we learned many lessons that first year that we would ultimately carry with us into the next season.
-
-After States, we were joined in the off-season by three new members: Jordan Darefsky, Jun Pritsker, and Elaine Hong. While Jordan is a fellow Staples High School student, Elaine and Jun both attend Weston High School. As such, a name change was needed for the team, to replace the “Minuteman” and make the name more inclusive. We became the “i²robotics” we are today, whose origin, pronunciation, and significance can be found on the Name page.
-
-As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the knowledge we gained from our last season, we were more prepared for the challenges ahead. We started meeting earlier for longer hours, registered for more competitions, and more thoroughly documented our progress in the engineering notebook. On the whole, though, while we were pleased with our first season, we simply wanted to accomplish and achieve so much more.</mutableString>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="t6V-M9-Hea" secondAttribute="trailing" constant="-13" id="0Hq-Nc-vul"/>
-                            <constraint firstItem="t6V-M9-Hea" firstAttribute="leading" secondItem="h0t-ij-2lh" secondAttribute="leadingMargin" constant="-12" id="Hsw-ew-etV"/>
-                            <constraint firstItem="SaS-LL-Jzd" firstAttribute="top" secondItem="t6V-M9-Hea" secondAttribute="bottom" constant="8" id="n7B-NV-yLE"/>
-                            <constraint firstItem="t6V-M9-Hea" firstAttribute="top" secondItem="nrd-fb-3Ji" secondAttribute="bottom" constant="8" id="uB0-aL-tW4"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="pPq-12-Jc4"/>
+There are 4 alliance-specific Balancing Stones (2 per Alliance) on which Robots begin and end the game. There are also 2 off-field alliance- specific Recovery Zones where robots place recovered Relics at the end of the match. Matches have two distinct periods of play: a 30-second Autonomous period followed by a two-minute Driver- Controlled period. The last 30 seconds of the Driver- Controlled period is called the End Game which adds new scoring opportunities for robots to achieve.</mutableString>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="About Relic Recovery" id="pPq-12-Jc4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRP-wy-APM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1909,6 +1926,8 @@ As i²robotics, we entered into the 2014 FTC Block Party! Challenge. Using the k
     <resources>
         <image name="Logo.png" width="32" height="32"/>
         <image name="RelicRecovery Logo.png" width="1088" height="1082"/>
+        <image name="RelicRecovery.png" width="840" height="700"/>
+        <image name="SparkRobotics.png" width="576" height="501"/>
         <image name="ballanced.png" width="25" height="25"/>
         <image name="brain-w.png" width="37" height="37"/>
         <image name="brain.png" width="28" height="28"/>

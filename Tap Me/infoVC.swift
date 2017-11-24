@@ -22,7 +22,8 @@ class InfoViewController: UITableViewController, MFMailComposeViewControllerDele
         let backButton = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
         
         self.navigationItem.backBarButtonItem = backButton
-        
+        //self.navigationController?.isNavigationBarHidden = true
+
         self.navigationItem.title = "About"
         
         
@@ -36,9 +37,7 @@ class InfoViewController: UITableViewController, MFMailComposeViewControllerDele
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func donePressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+
     
     // MARK: - Navigation
     

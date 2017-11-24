@@ -28,6 +28,9 @@
 		368C46461FC4987000A0F37F /* safezone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C463B1FC4985700A0F37F /* safezone@2x.png */; };
 		368C46471FC4987000A0F37F /* glyphs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C463C1FC4985F00A0F37F /* glyphs@2x.png */; };
 		368C46481FC4987000A0F37F /* ballanced@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368C463D1FC4986800A0F37F /* ballanced@2x.png */; };
+		36B06BF61FC5CA6600C2F669 /* PointBreakoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B06BF51FC5CA6600C2F669 /* PointBreakoutVC.swift */; };
+		36B06BF81FC5D18A00C2F669 /* SparkRobotics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B06BF71FC5D18200C2F669 /* SparkRobotics@2x.png */; };
+		36B06BFA1FC7808100C2F669 /* RelicRecovery.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B06BF91FC7807400C2F669 /* RelicRecovery.png */; };
 		4C4A1AA526D0845B13CB59B6 /* Pods_Relic_Scoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98713E8F2B0B2C2C5BAD24FE /* Pods_Relic_Scoring.framework */; };
 		6F795ED3162F4C81001F522A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F795ED2162F4C81001F522A /* UIKit.framework */; };
 		6F795ED5162F4C81001F522A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F795ED4162F4C81001F522A /* Foundation.framework */; };
@@ -84,6 +87,9 @@
 		368C463B1FC4985700A0F37F /* safezone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safezone@2x.png"; sourceTree = "<group>"; };
 		368C463C1FC4985F00A0F37F /* glyphs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphs@2x.png"; sourceTree = "<group>"; };
 		368C463D1FC4986800A0F37F /* ballanced@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballanced@2x.png"; sourceTree = "<group>"; };
+		36B06BF51FC5CA6600C2F669 /* PointBreakoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointBreakoutVC.swift; sourceTree = "<group>"; };
+		36B06BF71FC5D18200C2F669 /* SparkRobotics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SparkRobotics@2x.png"; sourceTree = "<group>"; };
+		36B06BF91FC7807400C2F669 /* RelicRecovery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RelicRecovery.png; sourceTree = "<group>"; };
 		3ED1C886829004AA25D92FE8 /* Pods-Relic Scoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relic Scoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Relic Scoring/Pods-Relic Scoring.debug.xcconfig"; sourceTree = "<group>"; };
 		4F6D3BD97DE6C5EC814B2440 /* Pods-Relic Scoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relic Scoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-Relic Scoring/Pods-Relic Scoring.release.xcconfig"; sourceTree = "<group>"; };
 		6F795ECE162F4C81001F522A /* Scorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,18 +185,21 @@
 				6F795EE2162F4C81001F522A /* AppDelegate.m */,
 				6F795EEA162F4C81001F522A /* MainStoryboard.storyboard */,
 				36020B371FC3D53900A06A84 /* infoVC.swift */,
+				36B06BF51FC5CA6600C2F669 /* PointBreakoutVC.swift */,
 				6F795EED162F4C81001F522A /* ViewController.h */,
 				6F795EEE162F4C81001F522A /* ViewController.m */,
 				D058042419BBC425004D7F9B /* Images.xcassets */,
-				6F795ED9162F4C81001F522A /* Supporting Files */,
+				6F795ED9162F4C81001F522A /* Images */,
 			);
 			name = "Relic-Recovery-iOS-Scoring";
 			path = "Tap Me";
 			sourceTree = "<group>";
 		};
-		6F795ED9162F4C81001F522A /* Supporting Files */ = {
+		6F795ED9162F4C81001F522A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				36B06BF91FC7807400C2F669 /* RelicRecovery.png */,
+				36B06BF71FC5D18200C2F669 /* SparkRobotics@2x.png */,
 				368C463D1FC4986800A0F37F /* ballanced@2x.png */,
 				368C46371FC4982C00A0F37F /* column@2x.png */,
 				368C46381FC4983500A0F37F /* cypher@2x.png */,
@@ -236,7 +245,7 @@
 				6F795EE6162F4C81001F522A /* Default@2x.png */,
 				6F795EE8162F4C81001F522A /* Default-568h@2x.png */,
 			);
-			name = "Supporting Files";
+			name = Images;
 			sourceTree = "<group>";
 		};
 		E31476BB405B3844284DF3B5 /* Pods */ = {
@@ -334,12 +343,14 @@
 				D05EB8DD19AFC20200F2A161 /* brain-w@2x.png in Resources */,
 				368C46431FC4987000A0F37F /* cypher@2x.png in Resources */,
 				36020B2F1FC3CDAA00A06A84 /* mail@2x.png in Resources */,
+				36B06BF81FC5D18A00C2F669 /* SparkRobotics@2x.png in Resources */,
 				D0B4444819B16665007C4CAB /* 706-cloud@2x.png in Resources */,
 				D05EB8D719AF5D9600F2A161 /* brain@2x.png in Resources */,
 				6F795EE7162F4C81001F522A /* Default@2x.png in Resources */,
 				6F795EE9162F4C81001F522A /* Default-568h@2x.png in Resources */,
 				368C463E1FC4987000A0F37F /* glyph@2x.png in Resources */,
 				36020B351FC3CF9800A06A84 /* RelicRecovery Logo.png in Resources */,
+				36B06BFA1FC7808100C2F669 /* RelicRecovery.png in Resources */,
 				36020B2E1FC3CDAA00A06A84 /* icons8-info-50.png in Resources */,
 				6F795EEC162F4C81001F522A /* MainStoryboard.storyboard in Resources */,
 				368C46401FC4987000A0F37F /* vuforia@2x.png in Resources */,
@@ -413,6 +424,7 @@
 			files = (
 				6F795EDF162F4C81001F522A /* main.m in Sources */,
 				6F795EE3162F4C81001F522A /* AppDelegate.m in Sources */,
+				36B06BF61FC5CA6600C2F669 /* PointBreakoutVC.swift in Sources */,
 				D05EB8E519AFC3DF00F2A161 /* Main.m in Sources */,
 				6F795EEF162F4C81001F522A /* ViewController.m in Sources */,
 				36020B381FC3D53900A06A84 /* infoVC.swift in Sources */,
