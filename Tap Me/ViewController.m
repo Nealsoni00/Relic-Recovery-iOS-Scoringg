@@ -236,9 +236,6 @@
         totalGlyphs2.text               =   nil;
     }
     
-    
-    
-    
     //End Game
     if (Zone1.selectedSegmentIndex == 0){
         upRightBonus1.selectedSegmentIndex   =   0;
@@ -319,14 +316,6 @@
     
 }
 
-
--(IBAction)goSite{
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.i2robotics.org"]];
-}
-
--(IBAction)goFB{
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.facebook.com/i2robotics"]];
-}
 
 
 @end

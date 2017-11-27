@@ -324,7 +324,7 @@
                                                         <action selector="score" destination="1XL-E5-6NC" eventType="valueChanged" id="yv5-oB-aRd"/>
                                                     </connections>
                                                 </segmentedControl>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Glyphs in Cypher 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5y-r2-1Md">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Glyphs in Cryptobox 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5y-r2-1Md">
                                                     <rect key="frame" x="17" y="203" width="343" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -450,7 +450,7 @@
                                                         <action selector="score" destination="1XL-E5-6NC" eventType="valueChanged" id="OJ9-ax-dLv"/>
                                                     </connections>
                                                 </segmentedControl>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Glyphs in Cryptobox 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtZ-AY-5cf">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Glyphs in Cryptobox 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtZ-AY-5cf">
                                                     <rect key="frame" x="17" y="203" width="343" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -462,8 +462,8 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5-80 pts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEM-UK-Zex">
-                                                    <rect key="frame" x="167" y="27" width="42.5" height="12"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2-154 pts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEM-UK-Zex">
+                                                    <rect key="frame" x="164" y="27" width="47" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -839,7 +839,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RelicRecovery Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1hO-WR-4mk">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RelicRecoveryLoggo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1hO-WR-4mk">
                                     <rect key="frame" x="122.5" y="18" width="130" height="130"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="130" id="MyR-JQ-CKU"/>
@@ -1262,7 +1262,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SparkRobotics.png" translatesAutoresizingMaskIntoConstraints="NO" id="L1t-Tf-9Uq">
-                                    <rect key="frame" x="97" y="10" width="180" height="147"/>
+                                    <rect key="frame" x="97" y="9.5" width="180" height="147"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="180" id="Jap-Jg-IzW"/>
                                         <constraint firstAttribute="height" constant="147" id="PeA-d3-NqE"/>
@@ -1281,12 +1281,12 @@
                             <rect key="frame" x="0.0" y="166" width="375" height="582"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <mutableString key="text">Spark Robotics, FTC Team 12701, is a newly founded robotics team made up of eight high schools students from Westport, CT. 
+                            <string key="text">Spark Robotics, FTC Team 12701, is a newly founded robotics team made up of eight high schools students from Westport, CT. 
 
 Spark competes in robotics tournaments sponsored by FIRST (For Inspiration and Recognition of Science and Technology), a nonprofit organization that uses a sports model to inspire kids of all ages in science, technology, engineering, art, and math (STEAM). In addition to building a competitive robot, we take great care to reach out to our community to teach and support them in the areas of FIRST &amp; STEAM. 
 
 Although Spark is just beginning, our members are certainly not amateurs. Most of our members have competed on other teams in the past, and are very experienced. We decided to start this new team to help foster a perfect learning environment while doing what we love. 
-</mutableString>
+</string>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1906,11 +1906,11 @@ Although Spark is just beginning, our members are certainly not amateurs. Most o
                             <rect key="frame" x="0.0" y="166" width="375" height="950.5"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.13895939290000001" green="0.28786525130000001" blue="0.44716915489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <mutableString key="text">FIRST RELIC RECOVERY℠ Presented by Qualcomm Incorporated is played on a 12 ft. × 12 ft. (3.7m × 3.7m) square field with approximately 1 ft. (0.3m) high walls and a soft foam mat floor. The object of the game is to attain a higher score than the opposing alliance by (1) scoring Glyphs into the Cryptoboxes and completing rows, column, and ciphers, (2) transferring Relics to the Recovery Zone, (3) retrieving Jewels, (4) parking on the Balancing Stones, and (5) navigating to specific parts of the Playing Field.
+                            <string key="text">FIRST RELIC RECOVERY℠ Presented by Qualcomm Incorporated is played on a 12 ft. × 12 ft. (3.7m × 3.7m) square field with approximately 1 ft. (0.3m) high walls and a soft foam mat floor. The object of the game is to attain a higher score than the opposing alliance by (1) scoring Glyphs into the Cryptoboxes and completing rows, column, and ciphers, (2) transferring Relics to the Recovery Zone, (3) retrieving Jewels, (4) parking on the Balancing Stones, and (5) navigating to specific parts of the Playing Field.
 
 The field is divided in the middle into a “red” and a “blue” side corresponding to the two alliances. In the center of the field is a taped off area that hold the Glyphs. The scoring elements for FIRST RELIC RECOVERY℠ are 48 alliance-neutral Glyphs (24 gray and 24 brown), 8 alliance-specific Jewels (4 per alliance) and 4 alliance- specific Relics (2 per Alliance). There are 4 alliance- specific Cryptoboxes (2 per Alliance) with taped off safe zones in front of each. 
 
-There are 4 alliance-specific Balancing Stones (2 per Alliance) on which Robots begin and end the game. There are also 2 off-field alliance- specific Recovery Zones where robots place recovered Relics at the end of the match. Matches have two distinct periods of play: a 30-second Autonomous period followed by a two-minute Driver- Controlled period. The last 30 seconds of the Driver- Controlled period is called the End Game which adds new scoring opportunities for robots to achieve.</mutableString>
+There are 4 alliance-specific Balancing Stones (2 per Alliance) on which Robots begin and end the game. There are also 2 off-field alliance- specific Recovery Zones where robots place recovered Relics at the end of the match. Matches have two distinct periods of play: a 30-second Autonomous period followed by a two-minute Driver- Controlled period. The last 30 seconds of the Driver- Controlled period is called the End Game which adds new scoring opportunities for robots to achieve.</string>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1925,8 +1925,8 @@ There are 4 alliance-specific Balancing Stones (2 per Alliance) on which Robots 
     </scenes>
     <resources>
         <image name="Logo.png" width="32" height="32"/>
-        <image name="RelicRecovery Logo.png" width="1088" height="1082"/>
         <image name="RelicRecovery.png" width="840" height="700"/>
+        <image name="RelicRecoveryLoggo.png" width="1152" height="1134"/>
         <image name="SparkRobotics.png" width="576" height="501"/>
         <image name="ballanced.png" width="25" height="25"/>
         <image name="brain-w.png" width="37" height="37"/>
